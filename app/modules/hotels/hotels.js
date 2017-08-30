@@ -10,7 +10,7 @@ config(['$routeProvider', function($routeProvider) {
         template: '<hotels-component hotels="$resolve.data"></hotels-component>',
         resolve: {
             data: function(hotelData) {
-                console.log(hotelData)
+                console.log(hotelData);
                 return hotelData;
             }
         }
