@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "sample-hotel-app",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "Sample hotel app with filter and search",
+  "repository": "https://github.com/paulsherwinang/sample-hotel-app.git",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",
