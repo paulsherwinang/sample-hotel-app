@@ -18,8 +18,13 @@ controller('RootController', function(){
     var self = this;
 
     this.searchTerm = '';
+    this.sortValue = '';
+
     this.onHotelNameSearch = function(searchTerm){
         self.searchTerm = searchTerm;
-        console.log(searchTerm);
+    };
+
+    this.onHotelSort = function(sortValue) {
+        self.sortValue = sortValue;
     };
 });

@@ -30,3 +30,7 @@ hotel-trustyou-component{
 .trustyou-score-label{
     display: block;
 }
+
+.main-container{
+    margin-top: 20px;
+}

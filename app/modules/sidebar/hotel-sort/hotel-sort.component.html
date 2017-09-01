@@ -1,0 +1,17 @@
+<div class="form-group">
+
+    <label for="hotel-sort-form">Sort properties by...</label>
+
+    <select class="form-control"
+            id="hotel-sort-form"
+            ng-model="$ctrl.sortValue"
+            ng-change="$ctrl.onSelectChange({sortValue: $ctrl.sortValue})">
+
+        <option selected></option>
+        <option value="name">Name</option>
+        <option value="rating">Rating</option>
+        <option value="imageCount">Image Count</option>
+
+    </select>
+
+</div>

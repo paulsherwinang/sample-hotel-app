@@ -27,16 +27,21 @@
 
     <app-header></app-header>
 
-    <div class="container-fluid">
-        <div class="row flex-xl-nowrap">
-            <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-                <app-sidebar on-hotel-name-search="$rootCtrl.onHotelNameSearch"></app-sidebar>
+    <div class="main-container">
+        <div class="container-fluid">
+            <div class="row flex-xl-nowrap">
+                <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+                    <app-sidebar on-hotel-name-search="$rootCtrl.onHotelNameSearch"
+                                 on-hotel-sort="$rootCtrl.onHotelSort"></app-sidebar>
+                </div>
+
+                <div class="col-12 col-md-9 col-xl-10">
+                    <div ng-view></div>
+                </div>
             </div>
-
-            <div ng-view></div>
-
         </div>
     </div>
+
 
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -50,6 +55,8 @@
 
     <script src="modules/sidebar/sidebar.js"></script>
     <script src="modules/sidebar/hotel-search/hotel-search.component.js"></script>
+    <script src="modules/sidebar/hotel-sort/hotel-sort.component.js"></script>
+    <script src="modules/sidebar/filter-trustyou/filter-trustyou.component.js"></script>
 
     <script src="modules/hotels/hotels.js"></script>
     <script src="modules/hotels/hotels-component/hotels.component.js"></script>

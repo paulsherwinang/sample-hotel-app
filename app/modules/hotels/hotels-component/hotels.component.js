@@ -7,6 +7,7 @@ component('hotelsComponent', {
     templateUrl: 'modules/hotels/hotels-component/hotels.component.html',
     bindings: {
         hotels: '<',
-        searchTerm: '<'
+        searchTerm: '<',
+        sortValue: '<'
     }
 });
