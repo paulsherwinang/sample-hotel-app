@@ -7,10 +7,9 @@ angular.module('myApp.hotels', [
 
 config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/hotels', {
-        template: '<hotels-component hotels="$resolve.data"></hotels-component>',
+        template: '<hotels-component search-term="$rootCtrl.searchTerm" hotels="$resolve.data"></hotels-component>',
         resolve: {
             data: function(hotelData) {
-                console.log(hotelData);
                 return hotelData;
             }
         }

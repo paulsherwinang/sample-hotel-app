@@ -1,25 +1,32 @@
-/* app css stylesheet */
+.star-rating{
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
 }
 
-.menu:before {
-  content: "[";
+.star{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url('public/star.svg');
+    vertical-align: middle;
 }
 
-.menu:after {
-  content: "]";
+.card-wrap{
+    display: flex;
 }
 
-.menu > li {
-  display: inline;
+hotel-trustyou-component{
+    background: #dc3545;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 40px;
 }
 
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+.trustyou-score{
+    align-items: center;
+}
+
+.trustyou-score-label{
+    display: block;
 }

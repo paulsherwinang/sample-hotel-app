@@ -3,10 +3,23 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
     'ngRoute',
-    'myApp.hotels'
+    'myApp.hotels',
+    'myApp.header',
+    'myApp.sidebar'
 ]).
+
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
 
     $routeProvider.otherwise({redirectTo: '/hotels'});
-}]);
+}]).
+
+controller('RootController', function(){
+    var self = this;
+
+    this.searchTerm = '';
+    this.onHotelNameSearch = function(searchTerm){
+        self.searchTerm = searchTerm;
+        console.log(searchTerm);
+    };
+});

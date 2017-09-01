@@ -1,0 +1,14 @@
+<div class="card" ng-class="{'border-danger': $ctrl.isHighlighted}">
+    <div class="card-wrap">
+        <div class="card-body">
+            <h5 class="card-title">{{$ctrl.hotel.name}}</h5>
+            <h6 class="card-subtitle text-muted">{{$ctrl.hotel.address}}</h6>
+            <hotel-rating-component rating="{{$ctrl.hotel.rating}}"></hotel-rating-component>
+        </div>
+
+        <hotel-trustyou-component ng-if="$ctrl.hotel.trustyou.score.overall"
+                                  score="{{$ctrl.hotel.trustyou.score.overall}}"></hotel-trustyou-component>
+
+    </div>
+
+</div>

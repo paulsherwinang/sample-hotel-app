@@ -1,6 +1,6 @@
 
 <div class="card-columns">
-    <div ng-repeat="hotel in $ctrl.hotels track by hotel.id">
+    <div ng-repeat="hotel in $ctrl.hotels | filter:{ name: $ctrl.searchTerm }">
         <hotel-component hotel="hotel"></hotel-component>
     </div>
 </div>
