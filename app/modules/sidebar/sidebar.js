@@ -11,8 +11,11 @@ component('appSidebar', {
     templateUrl: 'modules/sidebar/sidebar.html',
     bindings: {
         onHotelNameSearch: "<",
+        searchTerm: "<",
         onHotelSort: "<",
+        sortValue: "<",
         onTrustyouFilter: "<",
+        trustyouFilter: "<",
         onStarRatingFilter: "<",
         selectedRatings: "<"
     }

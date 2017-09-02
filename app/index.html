@@ -32,8 +32,11 @@
             <div class="row flex-xl-nowrap">
                 <div class="col-12 col-md-3 col-xl-3 bg-light kg-sidebar">
                     <app-sidebar on-hotel-name-search="$rootCtrl.onHotelNameSearch"
+                                 search-term="$rootCtrl.searchTerm"
                                  on-hotel-sort="$rootCtrl.onHotelSort"
+                                 sort-value="$rootCtrl.sortValue"
                                  on-trustyou-filter="$rootCtrl.onTrustyouFilter"
+                                 trustyou-filter="$rootCtrl.trustyouFilter"
                                  on-star-rating-filter="$rootCtrl.onStarRatingFilter"
                                  selected-ratings="$rootCtrl.selectedStars"></app-sidebar>
                 </div>

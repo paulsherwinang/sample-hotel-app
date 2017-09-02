@@ -19,7 +19,7 @@ controller('RootController', function(){
 
     this.searchTerm = '';
     this.sortValue = '';
-    this.trustyouFilter = '';
+    this.trustyouFilter = false;
     this.selectedStars = [];
 
     this.onHotelNameSearch = function(searchTerm){

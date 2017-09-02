@@ -1,4 +1,5 @@
-<hotel-sort-component on-select-change="$ctrl.onHotelSort(sortValue)"></hotel-sort-component>
+<hotel-sort-component on-select-change="$ctrl.onHotelSort(sortValue)"
+                      sort-value="$ctrl.sortValue"></hotel-sort-component>
 
 <div class="card">
     <div class="card-header bg-danger text-white p-2">Filter by...</div>
@@ -6,12 +7,14 @@
 
         <li class="list-group-item kd-sidebar-label">Looking for a property?</li>
         <li class="list-group-item p-2">
-            <hotel-search-component on-input-change="$ctrl.onHotelNameSearch(searchTerm)"></hotel-search-component>
+            <hotel-search-component on-input-change="$ctrl.onHotelNameSearch(searchTerm)"
+                                    search-term="$ctrl.searchTerm"></hotel-search-component>
         </li>
 
         <li class="list-group-item kd-sidebar-label">Trustyou Score</li>
         <li class="list-group-item p-2">
-            <filter-trustyou-component on-checkbox-change="$ctrl.onTrustyouFilter(trustyouFilter)"></filter-trustyou-component>
+            <filter-trustyou-component on-checkbox-change="$ctrl.onTrustyouFilter(trustyouFilter)"
+                                       trustyou-filter="$ctrl.trustyouFilter"></filter-trustyou-component>
         </li>
 
         <li class="list-group-item kd-sidebar-label">Star Rating</li>
