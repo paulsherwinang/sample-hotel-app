@@ -1,9 +1,15 @@
 # sample-hotel-app
 
 ## Prerequisite
-1. nodejs
+1. node
 2. npm
+3. git
 
+```
+git clone https://github.com/paulsherwinang/sample-hotel-app.git
+npm install
+bower install
+```
 
 ## Running the application
 ```
