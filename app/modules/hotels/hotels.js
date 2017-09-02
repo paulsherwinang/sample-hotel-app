@@ -15,7 +15,6 @@ config(['$routeProvider', function($routeProvider) {
 
         resolve: {
             data: function(hotelData) {
-                console.log(hotelData)
                 return hotelData;
             }
         }
