@@ -23,20 +23,41 @@
 }
 
 .kg-sidebar{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 56px;
-    border-right: 1px solid #eee;
+    position: inherit;
+    margin-top: 56px;
     padding-top: 15px;
 }
 
 .kg-main-view{
     padding-top: 15px;
-    position: absolute;
+    position: inherit;
     top: 57px;
     right: 0;
 }
+
+.kg-signin-btn:hover:after{
+    content: 'to cuteness'
+}
+
+@media (min-width: 768px) {
+    .kg-sidebar{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 56px;
+        border-right: 1px solid #eee;
+        padding-top: 15px;
+        margin-top: 0;
+    }
+
+    .kg-main-view{
+        padding-top: 15px;
+        position: absolute;
+        top: 57px;
+        right: 0;
+    }
+}
+
 
 hotel-trustyou-component{
     background: #dc3545;
