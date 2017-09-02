@@ -1,6 +1,9 @@
-<div class="form-check">
-    <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" value="">
-        Show only with Trustyou score
-    </label>
-</div>
+<label class="form-check-label">
+    <input class="form-check-input"
+           type="checkbox"
+           ng-model="$ctrl.trustyouFilter"
+           ng-change="$ctrl.onCheckboxChange({trustyouFilter: $ctrl.trustyouFilter})">
+
+    Trustyou score
+
+</label>

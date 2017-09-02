@@ -30,12 +30,15 @@
     <div class="main-container">
         <div class="container-fluid">
             <div class="row flex-xl-nowrap">
-                <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+                <div class="col-12 col-md-3 col-xl-3 bg-light kg-sidebar">
                     <app-sidebar on-hotel-name-search="$rootCtrl.onHotelNameSearch"
-                                 on-hotel-sort="$rootCtrl.onHotelSort"></app-sidebar>
+                                 on-hotel-sort="$rootCtrl.onHotelSort"
+                                 on-trustyou-filter="$rootCtrl.onTrustyouFilter"
+                                 on-star-rating-filter="$rootCtrl.onStarRatingFilter"
+                                 selected-ratings="$rootCtrl.selectedStars"></app-sidebar>
                 </div>
 
-                <div class="col-12 col-md-9 col-xl-10">
+                <div class="col-12 col-md-9 col-xl-9 kg-main-view">
                     <div ng-view></div>
                 </div>
             </div>
@@ -57,6 +60,7 @@
     <script src="modules/sidebar/hotel-search/hotel-search.component.js"></script>
     <script src="modules/sidebar/hotel-sort/hotel-sort.component.js"></script>
     <script src="modules/sidebar/filter-trustyou/filter-trustyou.component.js"></script>
+    <script src="modules/sidebar/filter-rating/filter-rating.component.js"></script>
 
     <script src="modules/hotels/hotels.js"></script>
     <script src="modules/hotels/hotels-component/hotels.component.js"></script>

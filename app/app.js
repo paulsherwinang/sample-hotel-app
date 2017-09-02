@@ -19,6 +19,8 @@ controller('RootController', function(){
 
     this.searchTerm = '';
     this.sortValue = '';
+    this.trustyouFilter = '';
+    this.selectedStars = [];
 
     this.onHotelNameSearch = function(searchTerm){
         self.searchTerm = searchTerm;
@@ -26,5 +28,13 @@ controller('RootController', function(){
 
     this.onHotelSort = function(sortValue) {
         self.sortValue = sortValue;
+    };
+
+    this.onTrustyouFilter = function(trustyouFilter) {
+        self.trustyouFilter = trustyouFilter;
+    };
+
+    this.onStarRatingFilter = function(selectedRatings){
+        self.selectedStars = selectedRatings;
     };
 });

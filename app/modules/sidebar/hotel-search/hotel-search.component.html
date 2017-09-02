@@ -1,8 +1,6 @@
-<div class="form-group">
-    <label for="hotel-search-form">Search properties by name</label>
-    <input type="text"
-           class="form-control"
-           id="hotel-search-form"
-           ng-model="$ctrl.searchTerm"
-           ng-change="$ctrl.onInputChange({searchTerm: $ctrl.searchTerm})">
-</div>
+<input type="text"
+       class="form-control form-control-sm"
+       id="hotel-search-form"
+       ng-model="$ctrl.searchTerm"
+       placeholder="Search by name..."
+       ng-change="$ctrl.onInputChange({searchTerm: $ctrl.searchTerm})">

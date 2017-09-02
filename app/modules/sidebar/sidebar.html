@@ -1,4 +1,25 @@
-<hotel-search-component on-input-change="$ctrl.onHotelNameSearch(searchTerm)"></hotel-search-component>
 <hotel-sort-component on-select-change="$ctrl.onHotelSort(sortValue)"></hotel-sort-component>
 
-<filter-trustyou-component></filter-trustyou-component>
+<div class="card">
+    <div class="card-header bg-danger text-white p-2">Filter by...</div>
+    <ul class="list-group list-group-flush">
+
+        <li class="list-group-item kd-sidebar-label">Looking for a property?</li>
+        <li class="list-group-item p-2">
+            <hotel-search-component on-input-change="$ctrl.onHotelNameSearch(searchTerm)"></hotel-search-component>
+        </li>
+
+        <li class="list-group-item kd-sidebar-label">Trustyou Score</li>
+        <li class="list-group-item p-2">
+            <filter-trustyou-component on-checkbox-change="$ctrl.onTrustyouFilter(trustyouFilter)"></filter-trustyou-component>
+        </li>
+
+        <li class="list-group-item kd-sidebar-label">Star Rating</li>
+        <li class="list-group-item p-2">
+            <filter-rating-component selection="$ctrl.selectedRatings"
+                                     on-rating-change="$ctrl.onStarRatingFilter(selectedRatings)"></filter-rating-component>
+        </li>
+    </ul>
+</div>
+
+

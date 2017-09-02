@@ -8,6 +8,8 @@ component('hotelsComponent', {
     bindings: {
         hotels: '<',
         searchTerm: '<',
-        sortValue: '<'
+        sortValue: '<',
+        trustyouFilter: '<',
+        selectedStars: '<'
     }
 });
